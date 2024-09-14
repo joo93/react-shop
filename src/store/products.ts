@@ -5,6 +5,8 @@ import CONSTANTS from "../constants/constants";
 // const productsURL = '/products.json';
 const productsURL = `${CONSTANTS.IS_DEV ? `/proxy` : `${import.meta.env.VITE_FAKE_STORE_API}`}/products`;
 
+console.log("API request URL:", productsURL);
+
 interface IRating {
   readonly rate?: number;
   readonly count?: number;
