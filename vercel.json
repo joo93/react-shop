@@ -1,6 +1,12 @@
 {
   "rewrites": [
-    { "source": "/proxy/:path*", "destination": "https://fakestoreapi.com/:path*" },
-    { "source": "/(.*)", "destination": "/index.html" }
+    {
+      "source": "/api/:path*",
+      "destination": "${VITE_FAKE_STORE_API}/:path*"
+    },
+    {
+      "source": "/(.*)",
+      "destination": "/index.html"
+    }
   ]
 }
