@@ -1,10 +1,6 @@
 {
   "rewrites": [
     {
-      "source": "/api/products/:path*",
-      "destination": "${VITE_FAKE_STORE_API}/:path*"
-    },
-    {
       "source": "/(.*)",
       "destination": "/index.html"
     }
